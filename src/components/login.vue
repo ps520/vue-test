@@ -50,6 +50,8 @@ export default {
 <style>
 .login-main {
   padding: 10px;
+  max-width: 600px;
+  margin:auto;
 }
 .mg-b {
   margin-bottom: 15px;
