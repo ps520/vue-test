@@ -124,7 +124,7 @@ export default {
     background: rgb(12, 12, 12);position: relative;height: 100%;
 }
 .el-main{
-    background: #fff;
+    background: #fff;padding:10px 20px;
 }
 .left-nav{
     width:200px;margin:0;padding:0;font-size:0;
