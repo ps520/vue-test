@@ -1,10 +1,6 @@
 <template>
   <div class="data">
-  <el-breadcrumb separator-class="el-icon-arrow-right">
-  <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-  <el-breadcrumb-item>用户管理</el-breadcrumb-item>
-  <el-breadcrumb-item>用户列表</el-breadcrumb-item>
-  </el-breadcrumb>
+<nav-bar :nav-list='navList'></nav-bar>
         <el-table
     :data="tableData"
     stripe
@@ -29,6 +25,7 @@
   </div>
 </template>
 <script>
+import navBar from '../components/navbar'
 export default {
   data () {
     return {
@@ -48,8 +45,16 @@ export default {
         date: '2016-05-03',
         name: '王小虎',
         address: '上海市普陀区金沙江路 1516 弄'
-      }]
+      }],
+      navList: [
+        {name: '首页', link: '/'},
+        {name: '用户管理', link: '/'},
+        {name: '用户列表', link: ''}
+      ]
     }
+  },
+  components: {
+    navBar: navBar
   }
 }
 </script>
